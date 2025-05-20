@@ -25,6 +25,8 @@
 - 📱 Мобильные устройства
 - 💻 Планшеты
 
+## 📫 Контакты
+
 - Telegram: [@Korneev_N_V](https://t.me/Korneev_N_V)
 - GitHub: [NikitfKorneev](https://github.com/NikitfKorneev)
 - Discord: [__tesla](https://discord.com/users/350970672769662976)
