@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korneev Nikita</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">
+    <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <span class="logo-text">Korneev Nikita</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Мои проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1>Добро пожаловать</h1>
+            <p class="subtitle">Я Backend разработчик на Python</p>
+            <div class="social-links">
+                <a href="https://t.me/Korneev_N_V" target="_blank" class="social-link">
+                    <i class="fab fa-telegram"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://github.com/NikitfKorneev" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://discord.com/users/350970672769662976" target="_blank" class="social-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+
+                <div class="about-block">
+                    <h3>Backend</h3>
+                    <i class="fab fa-python"></i>
+                    <p>Python, FastAPI</p>
+                </div>
+
+                <div class="about-block">
+                    <h3>Базы данных</h3>
+                    <i class="fas fa-database"></i>
+                    <p>PostgreSQL, MySQL</p>
+                </div>
+
+                <div class="about-block">
+                    <h3>API</h3>
+                    <i class="fas fa-code-branch"></i>
+                    <p>WebSocket</p>
+                </div>
+
+                <div class="about-block">
+                    <h3>Docker</h3>
+                    <i class="fab fa-docker"></i>
+                    <p>Docker Compose</p>
+                </div>
+                
+                <div class="about-block">
+                    <h3>Тестирование</h3>
+                    <i class="fas fa-vial"></i>
+                    <p>Pytest, Selenium</p>
+                </div>
+
+                <div class="about-block in-progress">
+                    <h3>Frontend</h3>
+                    <i class="fas fa-code"></i>
+                    <p>React, Vue.js, TypeScript</p>
+                    <span class="status">В освоении</span>
+                </div>
+
+                <div class="about-block in-progress">
+                    <h3>Kubernetes</h3>
+                    <i class="fas fa-cubes"></i>
+                    <p>Docker Swarm, K8s, Helm</p>
+                    <span class="status">В освоении</span>
+                </div>
+
+                <div class="about-block in-progress">
+                    <h3>DevOps</h3>
+                    <i class="fas fa-server"></i>
+                    <p>CI/CD, Terraform, Ansible</p>
+                    <span class="status">В освоении</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="services-grid">
+                <a href="https://github.com/NikitfKorneev/telegram-discourse-analysis" target="_blank" class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Web-сервис</h3>
+                    <p>Веб-сервис для анализа и визуализации данных цифровых дискурсов в telegram чатов и каналов</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Telegram API</span>
+                        <span>MySQL</span>
+                    </div>
+
+                </a>
+                <a href="https://github.com/NikitfKorneev/game-server" target="_blank" class="service-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Game Server</h3>
+                    <p>Создание игрового сервера с поддержкой WebSocket для многопользовательской игры. Реализация системы аутентификации и чата.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>WebSocket</span>
+                        <span>FastAPI</span>
+                    </div>
+                </a>
+                <a href="https://github.com/NikitfKorneev/ecommerce-api" target="_blank" class="service-card">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>E-commerce API</h3>
+                    <p>Разработка REST API для интернет-магазина с системой управления товарами, заказами и пользователями.</p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>MySQL</span>
+                        <span>Docker</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Контактные данные</h3>
+                    <div class="social-links">
+                        <div class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>NikKorneevVl@yandex.ru</span>
+                        </div>
+                        <div class="social-link">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (916) 007 15-80 </span>
+                        </div>
+                        <div class="social-link">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Москва, Россия</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="https://t.me/Korneev_N_V" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://github.com/NikitfKorneev" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://discord.com/users/350970672769662976" target="_blank" class="social-link">
+                            <i class="fab fa-discord"></i>
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
