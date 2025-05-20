@@ -33,7 +33,6 @@
 ## 🙏 Благодарности
 
 - [Font Awesome](https://fontawesome.com/) за иконки
-- [Particles.js](https://vincentgarreau.com/particles.js/) за эффект частиц
 
 ---
 
