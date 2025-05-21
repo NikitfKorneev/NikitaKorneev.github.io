@@ -1301,7 +1301,6 @@ body {
     position: relative;
     z-index: 3;
     box-sizing: border-box;
-    pointer-events: auto;
 }
 
 .service-card .unavailable-badge::before {
@@ -1366,4 +1365,7 @@ body {
     transform: none;
     box-shadow: none;
     border-color: rgba(0, 180, 216, 0.1);
+}
+.unavailable-badge.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
 }
