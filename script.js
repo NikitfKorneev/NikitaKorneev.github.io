@@ -305,4 +305,80 @@ particlesJS('particles-js', {
         }
     },
     retina_detect: true
-}); 
+});
+
+// Слайдер проектов
+const slider = document.querySelector('.services-grid');
+const prevBtn = document.querySelector('.slider-nav.prev');
+const nextBtn = document.querySelector('.slider-nav.next');
+const cards = document.querySelectorAll('.service-card');
+const playBtn = document.querySelector('.slider-play');
+const pauseBtn = document.querySelector('.slider-pause');
+
+if (playBtn && pauseBtn) {
+    function getCardsPerView() {
+        return window.innerWidth > 1100 ? 3 : 1;
+    }
+
+    let currentIndex = 0;
+    let autoSlideInterval = null;
+
+    function updateSlider() {
+        const cardsPerView = getCardsPerView();
+        const maxIndex = Math.max(0, cards.length - cardsPerView);
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+        const offset = currentIndex * (cards[0].offsetWidth + 40); // 40px gap
+        slider.style.transform = `translateX(-${offset}px)`;
+        prevBtn.style.opacity = currentIndex === 0 ? '0.5' : '1';
+        nextBtn.style.opacity = currentIndex === maxIndex ? '0.5' : '1';
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        const cardsPerView = getCardsPerView();
+        const maxIndex = Math.max(0, cards.length - cardsPerView);
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    playBtn.addEventListener('click', () => {
+        if (autoSlideInterval) return;
+        autoSlideInterval = setInterval(() => {
+            const cardsPerView = getCardsPerView();
+            const maxIndex = Math.max(0, cards.length - cardsPerView);
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateSlider();
+            } else {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = null;
+            }
+        }, 2000);
+    });
+
+    pauseBtn.addEventListener('click', () => {
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = null;
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        updateSlider();
+    });
+
+    updateSlider();
+}
+
+window.addEventListener('resize', () => {
+    updateSlider();
+});
