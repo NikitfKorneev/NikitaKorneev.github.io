@@ -1369,3 +1369,192 @@ body {
 .unavailable-badge.shake {
     animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
 }
+
+/* Обновленные медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .services {
+        padding: 60px 20px;
+    }
+
+    .services h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .service-card {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .service-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .service-card i {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .project-tech {
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    .project-tech span {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+
+    .unavailable-badge {
+        font-size: 13px;
+        padding: 12px 0;
+        margin: 15px 0 4px 0;
+    }
+
+    .github-hint {
+        font-size: 10px;
+        padding: 3px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        padding: 40px 15px;
+    }
+
+    .services h2 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .services-grid {
+        gap: 15px;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h3 {
+        font-size: 18px;
+    }
+
+    .service-card p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .service-card i {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .project-tech span {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+
+    .unavailable-badge {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+}
+
+/* Обновляем навигацию для мобильных устройств */
+@media (max-width: 768px) {
+    .nav {
+        padding: 15px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(18, 18, 18, 0.98);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        z-index: 1000;
+        padding: 20px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .nav-links li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+        padding: 12px 20px;
+        display: block;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+        background: none;
+        border: none;
+        color: var(--primary-color);
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+/* Улучшаем отображение контента на маленьких экранах */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero-content {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content .subtitle {
+        font-size: 16px;
+    }
+
+    .about-block {
+        padding: 15px;
+    }
+
+    .about-block h3 {
+        font-size: 16px;
+    }
+
+    .about-block p {
+        font-size: 13px;
+    }
+}
